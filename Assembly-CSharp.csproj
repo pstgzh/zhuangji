@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{824E3FA6-CCAC-81CA-BD55-45F0E3280197}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ControllerModel\Finch\Scripts\Finch_3DOF_Controller_MultiComponent_Behavior.cs" />
+     <Compile Include="Assets\ControllerModel\Link\Scripts\Link_3DOF_Controller_MultiComponent_Behavior.cs" />
+     <Compile Include="Assets\ControllerModel\Link\Scripts\Link_6DOF_Controller_MultiComponent_Behavior.cs" />
+     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\EventButton.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\KeyboardManager.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\KeyboardScript.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Keyboards\AbstractKeyboard.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Keyboards\EnglishKeyboard.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Keyboards\SymbolKeyboard.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Keyboards\TraditionalChineseKeyboard.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Language\English.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Language\InputFieldManager.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Language\Locale.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\Language\Symbol.cs" />
+     <Compile Include="Assets\Misc\IME\Scripts\MyInputField.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Samples\CameraTexture_Test\Scripts\CameraTextureSample.cs" />
+     <Compile Include="Assets\Samples\CameraTexture_Test\Scripts\HalfUVSquare.cs" />
+     <Compile Include="Assets\Samples\ControllerListener_Test\Scripts\ControllerListenerTest.cs" />
+     <Compile Include="Assets\Samples\ControllerManager_Test\Scripts\ControllerManagerTest.cs" />
+     <Compile Include="Assets\Samples\ControllerManager_Test\Scripts\Watcher.cs" />
+     <Compile Include="Assets\Samples\Controller_Test\Scripts\ControllerTest.cs" />
+     <Compile Include="Assets\Samples\Event_Test\Event_Test.cs" />
+     <Compile Include="Assets\Samples\GetPose\GetPose.cs" />
+     <Compile Include="Assets\Samples\HelloVR\Scripts\Go_Event.cs" />
+     <Compile Include="Assets\Samples\HelloVR\Scripts\addphysicalRaycaster.cs" />
+     <Compile Include="Assets\Samples\IMEMgr_Test\Scripts\IMETest.cs" />
+     <Compile Include="Assets\Samples\IMEMgr_Test\Scripts\IMEWrapperExample.cs" />
+     <Compile Include="Assets\Samples\IMEMgr_Test\Scripts\detectInputText.cs" />
+     <Compile Include="Assets\Samples\IME_Test\Scripts\WaveVR_CombinedInputModule.cs" />
+     <Compile Include="Assets\Samples\PermissionMgr_Test\Scripts\Permission_Test.cs" />
+     <Compile Include="Assets\Samples\PoseTracker_Test\Scripts\ArenaTest.cs" />
+     <Compile Include="Assets\Samples\PoseTracker_Test\Scripts\angle.cs" />
+     <Compile Include="Assets\Samples\Raycast_Test\Scripts\ObjectShot.cs" />
+     <Compile Include="Assets\Samples\Raycast_Test\Scripts\ShotRaycast.cs" />
+     <Compile Include="Assets\Samples\Resource_Test\Scripts\ResourceDemo.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\AimTheHead.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\BulletGenerator.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\BulletTarget.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\ChooseDoF.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\CtrlrSwipeLR.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\CtrlrSwipeUD.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\DistanceUI.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\DoFDetector.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\MenuGenerator.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\PermissionMgr.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\RangeFinder.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\ReloadSceneHandle.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\ResetOrigin.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\RulerMesh.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\RuntimeCube.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\SeaOfCube.cs" />
+     <Compile Include="Assets\Samples\SeaOfCube\Scripts\rotatebytime.cs" />
+     <Compile Include="Assets\Samples\Tools\Scripts\DebugTools.cs" />
+     <Compile Include="Assets\Samples\Tools\Scripts\EquirectangularSphereMeshGenerator.cs" />
+     <Compile Include="Assets\Samples\Tools\Scripts\PointCloudGenerator.cs" />
+     <Compile Include="Assets\Samples\TrackedButtons_Test\Scripts\TrackedButtons.cs" />
+     <Compile Include="Assets\WaveVR\Extra\Beam.cs" />
+     <Compile Include="Assets\WaveVR\Extra\ControllerConnectionStateReactor.cs" />
+     <Compile Include="Assets\WaveVR\Extra\ControllerFadeManager.cs" />
+     <Compile Include="Assets\WaveVR\Extra\EventSystem\WaveVR_EventHandler.cs" />
+     <Compile Include="Assets\WaveVR\Extra\EventSystem\WaveVR_Raycast.cs" />
+     <Compile Include="Assets\WaveVR\Extra\FadeManger.cs" />
+     <Compile Include="Assets\WaveVR\Extra\FollowTransform.cs" />
+     <Compile Include="Assets\WaveVR\Extra\GOEventTrigger.cs" />
+     <Compile Include="Assets\WaveVR\Extra\GazeInputModule.cs" />
+     <Compile Include="Assets\WaveVR\Extra\Generic_3DOF_MC_Action.cs" />
+     <Compile Include="Assets\WaveVR\Extra\Generic_6DOF_MC_Action.cs" />
+     <Compile Include="Assets\WaveVR\Extra\SimpleJSON.cs" />
+     <Compile Include="Assets\WaveVR\Extra\WaveVR_Resource.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\EventSystem\IWaveVR_EventSystemHandler.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\EventSystem\WaveVR_ExecuteEvents.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\TrackingPose\WaveVR_ControllerPoseTracker.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\TrackingPose\WaveVR_DevicePoseTracker.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\TrackingPose\WaveVR_PoseSimulator.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Beam.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Camera.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_CameraTexture.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_CanvasEye.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Controller.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_ControllerInputModule.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_ControllerListener.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_ControllerLoader.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_ControllerManager.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_ControllerPointer.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Distortion.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_FPS.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_IMEManager.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_IMEManagerWrapper.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Init.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Log.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_PermissionManager.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Render.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Reticle.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_TrackedButtons.cs" />
+     <Compile Include="Assets\WaveVR\Scripts\WaveVR_Utils.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\ControllerCenter.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\Debug3D.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\GameManager.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\Head.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\WandController.cs" />
+     <Compile Include="Assets\zhuangji\Scripts\touch.cs" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\WaveVR\Resources\WaveVR_CtrlrPointer.shader" />
+     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <None Include="Assets\ControllerModel\Link\Materials\CustomAtmosphere.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\WaveVR\Resources\WaveVRUnlitControllerShader.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\Samples\SeaOfCube\Resources\BGM\README.txt" />
+     <None Include="Assets\WaveVR\Resources\BeamTransparent.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <None Include="Assets\WaveVR\Resources\WaveVR_Distortion.shader" />
+     <None Include="Assets\Samples\CameraTexture_Test\Shaders\RenderPerEye.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\Demigiant\DemiLib\DemiLib.xml" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\WaveVR\Resources\WaveVR_Reticle.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\Samples\SeaOfCube\Resources\Grid.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\Samples\360Video\StreamingAssets\PebblyBeachHeadland\LICENSE.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DemiLib/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="libwvrDistortion">
+ <HintPath>E:/unity/Documents/Wave_VR/Assets/Plugins/libwvrDistortion.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{94A15ED3-50A6-3D80-3790-8170A1A6837F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
